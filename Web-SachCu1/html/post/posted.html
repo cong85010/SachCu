@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/post/post-left/posted.css">
+    <link rel="stylesheet" href="/css/post/post-right/manage_info.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <script src="/js/main.js"></script>
+    <script src="/js/post/posted.js" defer></script>
+    <script src="/js/post/post.js" defer></script>
+  </head>
+  <body>    
+    <div id="includeHeader"></div>
+    <div id="includeLogin" class="container-login"></div>
+    <div class="container containner-mid">
+        <h4 class="text-center"><i>Tin đã đăng</i></h4>
+        <hr>
+        <div class="row post">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 post__left">
+                <div class="post__box">
+                    <table class="table table-light text-center">
+                        <thead class="thead-light">
+                            <tr>
+                                <th style="width: 5%;"><input type="checkbox" name="post" onclick="checkAll()"></th>
+                                <th class="text-start thead__name" style="width: 40%;">Tên sách</th>
+                                <th class="thead__price" style="width: 10%;">Giá</th>
+                                <th class="thead__date" style="width: 15%;">Ngày đăng</th>
+                                <th class="thead__edit" style="width: 5%;">Sửa</th>
+                                <th class="thead__del" style="width: 5%;">Xóa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="p0">
+                                <td><input type="checkbox" name="post"></td>
+                                <td class="text-start">Cu am chan kinh 1</td>
+                                <td class="thead__price">20000</td>
+                                <td class="thead__date" >12-2-2021</td>
+                                <td onclick="nextLink()" class="baged baged-default"><a class="link" href="/html/post/post.html"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+                                <td onclick="removeRowPost('p0');" class="baged baged-default"><i class="fa fa-times" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr id="p1">
+                                <td><input type="checkbox" name="post"></td>
+                                <td class="text-start">Cu am chan kinh 2</td>
+                                <td class="thead__price">20000</td>
+                                <td class="thead__date" >12-2-2021</td>
+                                <td onclick="nextLink()" class="baged baged-default"><a class="link" href="/html/post/post.html"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+                                <td onclick="removeRowPost('p1');" class="baged baged-default"><i class="fa fa-times" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr id="p2">
+                                <td><input type="checkbox" name="post"></td>
+                                <td class="text-start">Cu am chan kinh 3</td>
+                                <td class="thead__price">20000</td>
+                                <td class="thead__date" >12-2-2021</td>
+                                <td onclick="nextLink()" class="baged baged-default"><a class="link" href="/html/post/post.html"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+                                <td onclick="removeRowPost('p2'); " class="baged baged-default"><i class="fa fa-times" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr id="p3">    
+                                <td><input type="checkbox" name="post"></td>
+                                <td class="text-start">Cu am chan kinh 4</td>
+                                <td class="thead__price">20000</td>
+                                <td class="thead__date" >12-2-2021</td>
+                                <td onclick="nextLink()" class="baged baged-default"><a class="link" href="/html/post/post.html"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+                                <td onclick="removeRowPost('p3'); " class="baged baged-default"><i class="fa fa-times" aria-hidden="true"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div onclick="removecheckPost()" style="padding: 1px 10px;" class="btn btn-danger">Xóa</div>
+                </div>
+            </div>  
+           <div id="includePost-right" class="col-sm-12 col-md-4 col-lg-3  post__right"></div>
+        </div>
+    </div>
+    <div id="includeFooter"></div>
+  </body>
+</html>

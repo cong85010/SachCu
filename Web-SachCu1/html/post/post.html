@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/post/post-left/newpost.css">
+    <link rel="stylesheet" href="/css/post/post-right/manage_info.css">
+    <script src="/js/main.js"></script>
+    <script src="/js/post/post.js" defer></script>
+    <script src="../../js/post/previewimg.js" defer></script>
+  </head>
+  <body>    
+    <div id="includeHeader"></div>
+    <div id="includeLogin" class="container-login"></div>
+    <div class="container containner-mid">
+        <h4 class="text-center"><i>Đăng tin</i></h4>
+        <hr>
+        <div class="row post">
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 post__left">
+                <div class="row post__form">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 post__form--left">
+                            <i>Tên sách <span style="color: red;">*</span></i>
+                        </div>
+                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 post__form__right">
+                            <form action="#">
+                                <input required type="text" value="" placeholder="Nhập tên sách">
+                            </form>
+                        </div>  
+                </div>
+                <div class="row post__form">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 post__form--left">
+                            <i>Giá sách <span style="color: red;">*</span></i>
+                        </div>
+                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 post__form__right">
+                            <form action="#">
+                                <input required  min="0" max="500000" type="number" value="" placeholder="Nhập giá sách ( VND )">
+                            </form>
+                        </div>  
+                </div>
+                <div class="row post__form">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 post__form--left">
+                            <i>Tình trạng sách <span style="color: red;">*</span></i>
+                        </div>
+                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 post__form__right">
+                            <form action="#">
+                                <input required min="50" type="number" value="" placeholder="Tình trạng sách (0-100)%">
+                            </form>
+                        </div>  
+                        <div class="post__previewing__img">
+                                
+                        </div>
+                </div>
+                <div class="row post__form">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 post__form--left">
+                            <i">Hình ảnh <span style="color: red;">*</span></i>
+                        </div>
+                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 post__form__right">
+                            <b>Chọn ảnh</b>
+                            <form action="#" class="post__form__img">
+                                <div id="group_img"></div>
+                                <label for="file" class="form__img"><i class="fa fa-plus" aria-hidden="true"></i></label>
+                                <input value="" required type="file" id="file" hidden name="File" multiple value="" 
+                                placeholder="Hình ảnh" accept="image/*">
+                            </form>
+                        </div>  
+                </div>
+                <div class="row post__form">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 post__form--left">
+                            <i>Ghi chú</i>
+                        </div>
+                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 post__form__right">
+                            <textarea style="height: 100px;" name="ghicu" id="inputghicu" class="form-control" rows="3" placeholder="Ghi chú"></textarea>
+                        </div>  
+                </div>
+                <div class="post__form--button col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="btn btn-defualt badge btn-secondary ">Hủy</div>
+                    <div class="btn btn-defualt badge btn-primary">Đăng tin</div>
+                </div>
+            </div>
+
+            <div id="includePost-right" class="col-sm-12 col-md-3 post__right"></div>            
+        </div>
+    </div>
+    <div id="includeFooter"></div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+.report1 {
+    width: 200px;
+    max-width: 200px;
+    height: 230px;
+    position: fixed;
+    right: -100px;
+    bottom: 0;
+    visibility: hidden;
+    z-index: 5;
+    background-color: antiquewhite;
+    transition: 0.4s;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    border: 1px solid gray;
+    box-shadow:  0 0 14px 1px #0b0b0b;
+}
+.report1 .icon__close {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
+.report1 h5 {
+    background-color: #f17272b0;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.report1 label  {
+    width: 100%;
+    border-radius: 20px;
+    border-bottom: 1px solid gray;
+    padding: 5px;
+}

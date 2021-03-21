@@ -1,0 +1,26 @@
+:root {
+    --backgr-pink: rgb(247, 157, 125);
+}
+.post__left {
+    padding: 20px;
+    border-right: 1px solid #d1cece
+}
+.table td, th {
+    border: 1px solid #ddd;
+}
+.table .text-start {
+    text-align: start;
+}
+.table .fa-times {
+    color: #dc3545;
+}
+.none_padding {
+    padding: 0 !important; 
+}
+
+.table .baged:hover, 
+.table .baged:hover a{
+    color: red;
+    cursor: pointer;
+    background: none;
+}

@@ -1,0 +1,44 @@
+#notification {
+    position: relative;
+}
+.notify {
+    background: #f79d7d;
+    width: 300px;
+    padding: 10px 0;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 5;
+    top: 20px;
+    right: 0px;
+    visibility: hidden;
+    transition: all 0.3s;
+    opacity: 0;
+}
+.notify__open {
+    opacity: 1;
+    top: 40px;
+}
+.notify__head {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding: 0 5px;
+}
+.notify__bottom ul {list-style: none;}
+.notify__bottom li{
+    border-bottom: 1px  solid rgb(182, 182, 182);
+    font-size:14px;
+    background: rgb(249 206 191);
+    padding: 0 10px;
+}
+.notify__bottom li a {
+    color: blue;
+}
+
+.notify > i {
+    position: absolute;
+    top: -16px;
+    right: 35px;
+    font-size: 25px;
+    color: #f79d7d;
+}

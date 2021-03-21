@@ -1,0 +1,17 @@
+.register__back {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.register__back:hover{
+    color: white;
+    left: -10px;
+}
+.register {
+    visibility: hidden;
+}
+.register__onscreen {
+    visibility: visible;
+}

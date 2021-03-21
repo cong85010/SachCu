@@ -1,0 +1,124 @@
+/*Mobile & Table*/
+@media only screen and (min-width: 0px) and (max-width: 1023px) {
+    .item__book {
+        width: 190px;
+        height: 335px;
+    }
+    .book__title, .book__price{
+        font-size: 14px;
+    }
+    .book__time {
+        font-size: 12px;
+    }
+    .subject {
+        border: none ;
+        padding: 20px 33px;
+    }
+    .subject__list {
+        overflow-x: scroll;
+        display: flex ;
+    }
+    .subject__list li {
+        display: inline-block;
+        white-space: nowrap;
+        border: 1px solid rgba(0,0,0,.125);
+        padding: 10px;
+    }
+    .book__infor--descr {
+      height: 100px;
+    }
+    .menu__list {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .menu__list .item_menu{
+        padding: 10px 15px;
+        white-space: nowrap;
+        display: inline-block;
+        border-right: 1px solid gray;
+    }
+    .header__bottom--right{
+        height: 70%;
+        align-items: center;
+    }
+    .line_down {
+        display: none;
+    }
+    .table .thead__date, .thead__price {
+        display: none;
+    }
+
+}
+/*Mobile*/
+
+@media only screen and (max-width: 760px) {
+    .header {
+        height: 120px;
+    }
+    .header__logo {
+        width: 100px;
+        height: 70px;
+    }
+    .header__right {
+        display: none;
+    }
+    .item__book {
+        width: 140px;
+        height: 230px;
+    }
+    .book__img {
+        height: 150px;
+    }
+    .book__title, .book__price{
+        margin-top: 5px;
+        margin-bottom: 0px;
+        font-size: 12px;
+    }
+    .book__time {
+        font-size: 10px;
+    }   
+    .thead__name {
+        width: 70%;
+    }
+    .thead__price, .thead__date {
+        display: none;
+    }
+    #header__mobile {
+        display: block !important;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .menu {
+        display: none;
+    }
+    .seach__mobile {
+        display: block !important;
+        position: absolute;
+        top: 60px;
+    }
+    .header__bottom--search {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 17px;
+    }
+    .header__bottom--search input {
+        width:20% !important;
+        transition:0.6s ease-in-out;
+    }
+    .header__bottom--search input:focus {
+       width: 80% !important;
+    }
+    
+    .containner-mid {
+        margin: 0;
+    }
+    .newpost__sort .btn {
+        padding: 2px 3px;
+    }
+    .subject__list li {
+        padding: 5px;
+    }
+}

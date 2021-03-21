@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/post/post-left/newpost.css">
+    <link rel="stylesheet" href="/css/post/post-right/manage_info.css">
+    <link rel="stylesheet" href="/css//post/information/profile.css">
+    <script src="/js/main.js"></script>
+    <script src="/js/post/information/profile.js"></script>
+  </head>
+  <body>    
+    <div id="includeHeader"></div>
+    <div id="includeLogin" class="container-login"></div>
+    <div class="container containner-mid">
+        <h4 class="text-center"><i>Thông tin tài khoản</i></h4>
+        <hr>
+        <div class="row post">
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 post__left">
+                <i>Hãy cập nhật thông tin và Email chính xác để khôi phục mật khẩu khi cần.</i>
+                <div class="row post__form">
+                  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 post__form--left">
+                      <i>Họ Tên:</i>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-9 col-lg-5 order-lg-5  post__form__right">
+                      <form action="#">
+                          <input class="name" disabled required type="text" value="Phan Thanh Cong" placeholder="Họ tên">
+                        <i onclick="editInfor('name')" class="fa fa-pencil" aria-hidden="true"></i>
+                      </form>
+                  </div>  
+                </div>
+                <div class="row post__form">
+                  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 post__form--left">
+                    <i>Email:</i>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-9 col-lg-5 order-lg-5  post__form__right">
+                    <form action="#">
+                          <input disabled required type="email" value="cong85010@gmail.com" placeholder="">
+                      </form>
+                  </div>  
+                </div>
+                <div class="row post__form">
+                  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 post__form--left">
+                    <i>Số ĐT:</i>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-9 col-lg-5 order-lg-5  post__form__right">
+                    <form action="#">
+                          <input disabled required type="number" value="0368795645" placeholder="">
+                      </form>
+                  </div>  
+                </div>
+                <div class="row post__form">
+                  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 post__form--left">
+                    <i>Mật khẩu:</i>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-9 col-lg-5 order-lg-5  post__form__right">
+                    <form class="formPass" action="#">
+                          <input class="pass" disabled required type="password" value="0368795645" placeholder="">
+                          <i onclick="viewPass()" class="fa fa-eye" aria-hidden="true"></i>
+                          <i onclick="editInfor('pass')" class="fa fa-pencil" aria-hidden="true"></i>
+                   </form>
+                  </div>  
+                </div>
+            </div>
+            <div id="includePost-right" class="col-sm-12 col-md-3 post__right"></div>            
+        </div>
+    </div>
+    <div id="includeFooter"></div>
+  </body>
+</html>
